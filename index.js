@@ -4,7 +4,7 @@ const express = require('express');
 const routes = require('./routes');
 const path = require('path');
 const sequelize = require('./config/db');
-require('./models/Proyectos');
+//require('./models/Proyectos');
 
 
 
@@ -39,6 +39,7 @@ app.listen(PORT, async () =>{//puerto en el que quieres lanzar el server
 
     //conectar a la BBDD
     try {
+      //sync({ force: true }) force true es para restablecer la BBDD cuando se resetee el server y elimine los datos
         await sequelize.sync();
         console.log('Connection has been established successfully.');
       } catch (error) {

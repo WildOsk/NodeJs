@@ -1,5 +1,7 @@
 const { DataTypes  } = require('sequelize');
 const sequelize = require('../config/db');
+const slug = require('slug');
+const shortid = require('shortid');
 
 const Proyectos = sequelize.define('proyectos', {
   // Model attributes are defined here
@@ -15,6 +17,13 @@ const Proyectos = sequelize.define('proyectos', {
 
 }, {
   // Other model options go here
+  hooks:{
+    beforeCreate(proyecto){
+      const url = slug(proyecto.nombre).toLowerCase();
+
+      proyecto.url = `${url}-${shortid.generate()}`;
+    }
+  }
 });
 
 module.exports = Proyectos;
