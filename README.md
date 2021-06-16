@@ -13,7 +13,7 @@ Curso de NodeJS
   4. Uso de sequelize hooks para insertar url automaticamente
   5. Generando una url unica para proyectos
 
-- [Sección 13](https://github.com/WildOsk/UpTask/commit/fd830159562cc624f6b0af58f4e6ee564c7a5fe7) -> Corresponde hasta sección 12.
+- [Sección 13](https://github.com/WildOsk/UpTask/commit/fd830159562cc624f6b0af58f4e6ee564c7a5fe7) -> Corresponde hasta sección 13.
 
   1. Consultando la base de datos y pasando el resultado a la vista
   2. Creando un Helper para ver que datos obtenemos de la BBDD
@@ -21,7 +21,15 @@ Curso de NodeJS
   4. Agregando routing a los distintos proyectos
   5. Finalizando routing para cada proyecto
 
+- [Sección 14](https://github.com/WildOsk/UpTask/commit/fd830159562cc624f6b0af58f4e6ee564c7a5fe7) -> Corresponde hasta sección 14.
+
+  1. Creando el formulario con las acciones para el proyecto editar y eliminar
+  2. Consultando el proyecto actual y los proyectos existentes en un promise
+  3. Creando el formulario para editar el proyecto
+  4. Guardando los cambios cuando un proyecto es modificado en su nombre
+
 ## Tags
 - [Sección 11](https://github.com/WildOsk/UpTask/releases/tag/seccion11) -> Corresponde hasta sección 11.
 - [Sección 12](https://github.com/WildOsk/UpTask/releases/tag/seccion12) -> Corresponde hasta sección 12.
 - [Sección 13](https://github.com/WildOsk/UpTask/releases/tag/seccion13) -> Corresponde hasta sección 13.
+- [Sección 14](https://github.com/WildOsk/UpTask/releases/tag/seccion14) -> Corresponde hasta sección 14.
