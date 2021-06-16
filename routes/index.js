@@ -14,6 +14,10 @@ module.exports = function() {
 
     router.post('/nuevo-proyecto',
         body('nombre').not().isEmpty().trim().escape(),
-        proyectosController.nuevoProyecto)
+        proyectosController.nuevoProyecto
+    );
+
+    //Listar proyecto
+    router.get('/proyectos/:url', proyectosController.proyectoUrl)
     return router;
 }

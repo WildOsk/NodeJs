@@ -6,6 +6,9 @@ const path = require('path');
 const sequelize = require('./config/db');
 //require('./models/Proyectos');
 
+//helpers con algunas funciones
+const helpers = require('./helpers');
+
 
 
 const PORT = process.env.PORT || 3000;
@@ -21,6 +24,12 @@ app.set('view engine', 'pug');
 
 //añadir la carpeta de las vistas
 app.set('views', path.join(__dirname, './views'));
+
+//pasar vardump a la aplicacion
+app.use((req, res, next)=>{
+  res.locals.vardump = helpers.vardump;
+  next();
+})
 
 //HABILITAR bodyParser para leer datos de formulario bodyParser is deprecated
 //app.use(bodyParser.urlencoded({extended:true}));
