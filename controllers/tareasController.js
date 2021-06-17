@@ -44,3 +44,14 @@ exports.cambiarEstadoTarea = async(req, res, next) =>{
     //Redireccionar
     res.status(200).send(`Actualizado`);
 }
+
+exports.eliminarTarea = async(req, res, next) =>{
+    const { id } = req.params;
+    //como la llave y el valor son iguales(mismo nombre) no hace falta poner where: {id: id}
+    const resultado = await Tareas.destroy({where:{id}});
+
+    if(!resultado) return next();
+
+    //Redireccionar
+    res.status(200).send(`Tarea eliminada correctamente..`);
+}
