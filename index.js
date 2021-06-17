@@ -4,8 +4,8 @@ const express = require('express');
 const routes = require('./routes');
 const path = require('path');
 const sequelize = require('./config/db');
-//require('./models/Proyectos');
-
+require('./models/Proyectos');
+require('./models/Tareas');
 //helpers con algunas funciones
 const helpers = require('./helpers');
 
