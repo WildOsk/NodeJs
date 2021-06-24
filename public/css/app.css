@@ -65,6 +65,13 @@ body {
     padding-left: 2rem;
     color: black;
 }
+
+.campo input[type="email"]:hover,
+.campo input[type="text"]:hover,
+.campo input[type="password"]:hover {
+   background-color: rgba(255, 160, 122, 0.26);
+}
+
 .campo.acciones {
     justify-content: space-between;
 }
